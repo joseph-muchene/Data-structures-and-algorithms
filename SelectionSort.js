@@ -1,16 +1,13 @@
-// 8,7,6,5,4,3,2,1
+// [8,7,6,5,4,3,2,1]
 function SelectionSort(arr) {
-  for (let x = 0; x < arr.length; x++) {
-    for (let y = 0; y < arr.length; y++) {
-      if (arr[y] > arr[y + 1]) {
-        let temp = arr[y + 1];
-        arr[y+1] = arr[y];
-        arr[y] = temp;
-      }
+    for(let x = 1; x < arr.length; x++){
+        let val = arr[i]
+        let j = i - 1;
+
+        while(j >= 0 && val < arr[j]){
+         arr[j + 1] = arr[j]
+        }
     }
-  }
-  return arr;
+return arr 
 }
 
-
-console.log(SelectionSort([20,10,8,7,2]))
