@@ -60,3 +60,11 @@ function mergeSort(arr) {
 
 //   return merge(mergingSort(left), mergingSort(right));
 // }
+
+/*
+The merge sort algorithm has the time complexity od o(longN) meaning that the time required to execute N number of elements will rise in logarithmic proportion. if sorting an array of 10elements requires 1ms, sorting an array of 100 elements will take 2ms
+
+
+
+
+*/
