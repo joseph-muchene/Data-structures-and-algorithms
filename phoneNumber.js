@@ -30,7 +30,7 @@ function createPhoneNumber(numbers) {
   }
   second();
   formatted += value + " " + svalue;
-
+  console.log(formatted);
   return formatted;
 }
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
