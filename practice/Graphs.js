@@ -50,4 +50,49 @@ class Graph {
 
     return result;
   }
+
+  DepthFirstIterative(start) {
+    const result = [];
+    const stack = [start];
+    const visited = {};
+
+    visited[start] = true;
+
+    while (stack.length) {
+      const vertex = stack.pop();
+
+      result.push(vertex);
+
+      this.nodeList[vertex].forEach((neighbor) => {
+        // check if visited
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+
+          stack.push(neighbor);
+        }
+      });
+    }
+  }
+
+  breadthFirst(start) {
+    const result = [];
+    const queue = [start];
+    const visited = {};
+
+    visited[start] = true;
+    result.push(start);
+
+    while (queue.length) {
+      const currentVal = queue.shift();
+
+      this.nodeList[currentVal].forEach((neighbor) => {
+        // check if visted
+        if (!visited[neighbor]) {
+          visited[true];
+
+          queue.push(neighbor);
+        }
+      });
+    }
+  }
 }
